@@ -39,8 +39,7 @@ func (a *actorB) startCall() {
 	}
 
 	randNum := rand.Intn(100) + 30
-	time.Sleep(time.Millisecond * time.Duration(randNum))
-	a.Send(a.PID(), doStartCall{})
+	a.SendAfter(a.PID(), doStartCall{}, time.Millisecond*time.Duration(randNum))
 }
 
 func (a *actorB) HandleMessage(from gen.PID, message any) error {

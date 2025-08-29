@@ -14,5 +14,6 @@ func factoryA() gen.ProcessBehavior {
 }
 
 func (a *actorA) HandleCall(from gen.PID, ref gen.Ref, request any) (any, error) {
+	// time.Sleep(time.Millisecond)
 	return retMessage{}, nil
 }
