@@ -3,7 +3,7 @@ module demo
 go 1.24.1
 
 require (
-	ergo.services/ergo v1.999.301-0.20250721201224-248b9761f4cd
+	ergo.services/ergo v1.999.310
 	ergo.services/logger v0.0.0-20250305130816-d9b7c57c219d
 )
 
